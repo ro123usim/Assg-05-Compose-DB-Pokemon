@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
 
@@ -19,24 +21,20 @@ import java.util.List;
  */
 public class MainActivity extends Activity {
 
-    // Casting as View hides methods that we added
-    //private View bouncingBallView = null;
-    private BouncingBallView bouncingBallView = null;
+    // casting to "View" disallows seeing added methods
+//    private View bouncingBallView;
+
+    // Cast as "BouncingBallView" to see methods that you add
+     private BouncingBallView bouncingBallView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        //setContentView(R.layout.activity_main_delete);
-
-        // Add Bouncing Ball
-        // http://www3.ntu.edu.sg/home/ehchua/programming/android/Android_2D.html
-        bouncingBallView = new BouncingBallView(this);
-        setContentView(bouncingBallView);
+        // get the view object so we can reference it later
+        bouncingBallView = (BouncingBallView) findViewById(R.id.custView);
         Log.v("SENSORS", "onCreate bouncingBallView=" + bouncingBallView.toString());
-
-        // See can see newly added methods in bouncingBallView
-        // bouncingBallView.callMe();
 
         //Check sensors
         setupSensors();
@@ -88,7 +86,13 @@ public class MainActivity extends Activity {
             // You can't play this game.
             Log.v("SENSORS", "NO SENSOR TYPE?" );
         }
-
     }
 
+    private void makeCall(){
+        bouncingBallView.callMe();
+    }
+
+    public void onRussButtonClick(View view) {
+        bouncingBallView.RussButtonPressed();
+    }
 }

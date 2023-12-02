@@ -14,6 +14,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Formatter;
+import java.util.Random;
 
 /**
  * Created by Russ on 08/04/2014.
@@ -218,6 +219,27 @@ public class BouncingBallView extends View implements SensorEventListener {
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         Log.v("onAccuracyChanged", "event=" + sensor.toString());
     }
+    public void callMe() {
+        Log.v("xxxxx", "yyyyy");
+//        this.callMe();
+    }
 
-    public void callMe(){}
+    Random rand = new Random();
+
+    public void RussButtonPressed() {
+        Log.d("BouncingBallView  BUTTON", "User tapped the  button ... VIEW");
+
+        //get half of the width and height as we are working with a circle
+        int viewWidth = this.getMeasuredWidth();
+        int viewHeight = this.getMeasuredHeight();
+
+        // make random x,y, velocity
+        int x = rand.nextInt(viewWidth);
+        int y = rand.nextInt(viewHeight);
+        int dx = rand.nextInt(50);
+        int dy = rand.nextInt(20);
+
+        balls.add(new Ball(Color.RED, x, y, dx, dy));  // add ball at every touch event
+
+    }
 }
