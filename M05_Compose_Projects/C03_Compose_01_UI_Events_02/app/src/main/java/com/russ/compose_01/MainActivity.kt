@@ -24,6 +24,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
+//import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
@@ -52,28 +53,25 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp() {
-    var shouldShowNext by rememberSaveable { mutableStateOf(true) }
     var index by remember { mutableStateOf(0) }
 
     Surface(color = MaterialTheme.colorScheme.background) {
         Log.d(
             "Compose",
-            "shouldShowNext = ${shouldShowNext.toString()} index = $index"
+            "index = $index"
         )
 
         // on boolean flag and every 3rd index
-        if (shouldShowNext && ((index % 3) == 0)) {
-            Log.d("Compose", "MyApp1: $index")
+        if ((index % 3) == 0) {
+            Log.d("Compose", "MyApp1: index = $index ")
             Screen_01(
                 index = index,
-                updateIndex = { index = it },
-                onShouldShowNext = { shouldShowNext = false })
+                updateIndex = { index = it })
         } else {
-            Log.d("Compose", "MyApp2: $index")
+            Log.d("Compose", "MyApp2: index = $index ")
             Screen_02(
                 index = index,
-                updateIndex = { index = it },
-                onShouldShowNext = { shouldShowNext = true })
+                updateIndex = { index = it })
         }
     }
 }
@@ -87,7 +85,6 @@ fun Separator() {
 fun Screen_01(
     index: Int,
     updateIndex: (index: Int) -> Unit,
-    onShouldShowNext: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column {
@@ -113,7 +110,7 @@ fun Screen_01(
         ) {
             Button(
                 modifier = (Modifier.padding(vertical = 24.dp)),
-                onClick = { updateIndex(1); onShouldShowNext }
+                onClick = { updateIndex(1) }
             ) {
                 Text("Other Screen $index")
             }
@@ -125,7 +122,6 @@ fun Screen_01(
 fun Screen_02(
     index: Int,
     updateIndex: (index: Int) -> Unit,
-    onShouldShowNext: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val counter: MutableState<Int> = remember { mutableStateOf(1) }
@@ -162,13 +158,13 @@ fun Screen_02(
         }
         Button(
             modifier = (Modifier.padding(vertical = 24.dp)),
-            onClick = { counter.value += 1; updateIndex(counter.value); onShouldShowNext }
+            onClick = { counter.value += 1; updateIndex(counter.value) }  // Jump the index to this counter
         ) {
             Text("Other Screen $index")
         }
         // update index to value of counter
         Text(
-            modifier = Modifier.clickable { counter.value += 1; { updateIndex(counter.value) } },
+            modifier = Modifier.clickable { counter.value += 1 },
             text = "${counter.value}",
         )
     }
