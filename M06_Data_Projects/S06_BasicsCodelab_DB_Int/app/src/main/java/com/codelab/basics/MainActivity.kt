@@ -21,7 +21,6 @@
 
 package com.codelab.basics
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -35,12 +34,12 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.text.ClickableText
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons.Filled
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -53,17 +52,27 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.codelab.basics.ui.theme.BasicsCodelabTheme
 
+/**
+ * Sample DB Compose app with Master-Details pages
+ * ShowPageMaster ... shows the list of DB elements
+ * ShowPageDetails ... shows the detail contents of one element
+ *
+ * There isn't much to show, so details looks empty, but
+ * the structure is sound, even if the data itself is shallow
+ *
+ * Use the logcat to follow the logic.
+ *
+ * It's waiting for real data....
+ */
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,34 +103,38 @@ fun MyApp(
     var index by remember { mutableIntStateOf(-1) } // which name to display
 
     Surface(modifier, color = MaterialTheme.colorScheme.background) {
-        if ((index <= 0) or (index > names.size)) {
+        if ((index < 0) or (index >= names.size)) {      //Always Check endpoints!
             Log.d("CodeLab_DB", "MyApp1: index = $index")
-            Greetings(names = names,
+            ShowPageMaster(names = names,
                 updateIndex = { index = it })
         } else {
             Log.d("CodeLab_DB", "MyApp2: $index ")
-            ShowData(name = names[index - 1],  // List starts at 0, DB records start at 1
+            ShowPageDetails(name = names[index],  // List starts at 0, DB records start at 1
+                index = index,               // use index for prev, next screen
                 updateIndex = { index = it })
         }
     }
 }
 
 @Composable
-private fun Greetings(
+private fun ShowPageMaster(
     modifier: Modifier = Modifier,
     names: List<DataModel>,
     updateIndex: (index: Int) -> Unit
 ) {
     LazyColumn(modifier = modifier.padding(vertical = 4.dp)) {
-        items(items = names) { name ->
-            Greeting(name = name, updateIndex)
+        itemsIndexed(items = names) { pos, name ->
+            Log.d("CodeLab_DB", "Item at index $pos is $name")
+            ShowEachListItem(name = name, pos, updateIndex)
         }
     }
 }
 
 @Composable
-private fun Greeting(
-    name: DataModel, updateIndex: (index: Int) -> Unit
+private fun ShowEachListItem(
+    name: DataModel,
+    pos: Int,
+    updateIndex: (index: Int) -> Unit
 ) {
     Card(
         colors = CardDefaults.cardColors(
@@ -129,7 +142,7 @@ private fun Greeting(
         ),
         modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
     ) {
-        CardContent(name, updateIndex)
+        CardContent(name, pos, updateIndex)
         Log.d("CodeLab_DB", "Greeting: ")
     }
 }
@@ -137,6 +150,7 @@ private fun Greeting(
 @Composable
 private fun CardContent(
     name: DataModel,
+    pos: Int,
     updateIndex: (index: Int) -> Unit
 ) {
     var expanded by remember { mutableStateOf(false) }
@@ -155,13 +169,18 @@ private fun CardContent(
                 .weight(1f)
                 .padding(12.dp)
         ) {
-            Button(onClick = {
-                updateIndex(name.id.toInt());Log.d(
-                "CodeLab_DB",
-                "Clicked = ${name.toString()} "
-            )
+            Button(
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Green,
+                    contentColor = Color.Red),
+                onClick = {
+                updateIndex(pos);
+                Log.d(
+                    "CodeLab_DB",
+                    "Clicked = ${name.toString()} "
+                )
             })
-            { Text(text = "Details ${name.id}") }
+            { Text(text = "Details ${pos}") }
             Text(
                 // Just the name of this record
                 text = name.modelName,
@@ -191,10 +210,11 @@ private fun CardContent(
 
 
 @Composable
-private fun ShowData(
+private fun ShowPageDetails(
     name: DataModel,
     updateIndex: (index: Int) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    index: Int
 ) {
     Column(
         modifier = modifier.fillMaxSize(),
@@ -207,9 +227,9 @@ private fun ShowData(
 
         Button(onClick = { updateIndex(-1) })
         { Text(text = "Master") }
-        Button(onClick = { updateIndex(name.id.toInt() + 1) })
+        Button(onClick = { updateIndex(index + 1) })
         { Text(text = "Next") }
-        Button(onClick = { updateIndex(name.id.toInt() - 1) })
+        Button(onClick = { updateIndex(index - 1) })
         { Text(text = "Prev") }
     }
 }
