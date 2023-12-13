@@ -10,17 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6db3f31-e100-4745-982a-ed0e6cf5a575" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M02_Calculator/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/BouncingBallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/BouncingBallView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/app/src/main/res/layout-large-land/activity_main_activity_screen_size.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/app/src/main/res/layout-large-land/activity_main_activity_screen_size.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/.gitignore" beforeDir="false" />
@@ -230,10 +236,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2"
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "last_opened_file_path": "C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background"
   }
 }]]></component>
   <component name="RecentsManager">
