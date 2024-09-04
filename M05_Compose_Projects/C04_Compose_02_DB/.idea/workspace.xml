@@ -10,172 +10,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6db3f31-e100-4745-982a-ed0e6cf5a575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/migrations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/BouncingBallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/BouncingBallView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/java/com/example/m03_bounce/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/app/src/main/res/layout-large-land/activity_main_activity_screen_size.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/app/src/main/res/layout-large-land/activity_main_activity_screen_size.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/androidTest/java/com/example/m05_fragments_v03/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/java/com/example/m05_fragments_v03/NewsArticleDetailActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/java/com/example/m05_fragments_v03/NewsArticleDetailFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/java/com/example/m05_fragments_v03/NewsArticleListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/java/com/example/m05_fragments_v03/NewsArticleListFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/java/com/example/m05_fragments_v03/dummy/DummyContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/layout-sw600dp/activity_newsarticle_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/layout/activity_newsarticle_detail.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/layout/activity_newsarticle_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/layout/fragment_newsarticle_detail.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/layout/layout-sw600dp/activity_newsarticle_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/app/src/test/java/com/example/m05_fragments_v03/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M05_Fragments_V03/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/androidTest/java/com/example/save_v01/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/java/com/example/save_v01/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/java/com/example/save_v01/myDataClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/app/src/test/java/com/example/save_v01/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V01/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/androidTest/java/com/example/save_v03a/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/java/com/example/save_v03a/DBClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/java/com/example/save_v03a/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/app/src/test/java/com/example/save_v03a/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/Save_V03a/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M07_Sensors/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/java/com/example/m07_sensors/BouncingBallView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/java/com/example/m07_sensors/BouncingBallView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/java/com/example/m07_sensors/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/java/com/example/m07_sensors/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M10_Intents/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M10_Intents/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M10_Intents/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M10_Intents/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M10_Intents/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Ba\.android\avd\Pixel_5_API_30_1.avd]" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Rusty\.android\avd\Medium_Phone_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -225,6 +158,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2XOeP8C7mh9Iy7lKDMe8YJbhYIH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -232,12 +168,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Android App.app.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\Rusty\\.gradle"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -256,11 +204,11 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -322,11 +270,11 @@
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
