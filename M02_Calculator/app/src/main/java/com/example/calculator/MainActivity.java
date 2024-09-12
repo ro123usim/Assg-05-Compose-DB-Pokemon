@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d("M01_Calculator ADD BUTTON", "User tapped the Add button");
+                Log.d("M01_Calculator ADD BUTTON", "button =>"+button.toString());
+                Log.d("M01_Calculator ADD BUTTON", "button =>"+button.getText());
+                Log.d("M01_Calculator ADD BUTTON", "button =>"+button.getId());
 
                 Double d1 = 0.0;
                 Double d2 = 0.0;
