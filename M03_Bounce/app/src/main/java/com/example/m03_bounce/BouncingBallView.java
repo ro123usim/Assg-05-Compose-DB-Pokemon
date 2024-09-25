@@ -58,10 +58,29 @@ public class BouncingBallView extends View {
         //canvas.drawARGB(0,25,25,25);
         //canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
-        for (Ball b : balls) {
-            b.draw(canvas);  //draw each ball in the list
-            b.moveWithCollisionDetection(box);  // Update the position of the ball
-        }
+
+            for (Ball b : balls) {
+                b.draw(canvas);  //draw each ball in the list
+                b.moveWithCollisionDetection(box);  // Update the position of the ball
+
+//                /// check if ball is in this square
+//                float rect_x1 = 100;
+//                float rect_x2 = 200;
+//                float rect_y1 = 250;
+//                float rect_y2 = 350;
+//
+//                //check if x1-x2 is small AND y1-y2 is small
+//                if ((b.x>rect_x1) &&
+//                        (b.x<rect_x2) &&
+//                        (b.y>rect_y1) &&
+//                        (b.y<rect_y2)) {
+//                    // Hit .. double speed
+//                    b.speedX = 2* b.speedX;
+//                    b.speedY = 2* b.speedY;
+//                    Log.w("Bounce", "HIT!");
+//                }
+
+            }
 
         // Delay on UI thread causes big problems!
         // Simulates doing busy work or waits on UI (DB connections, Network I/O, ....)
