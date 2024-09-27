@@ -1,4 +1,4 @@
-package Part_5_Motion_Sound;
+package Bounce;
 
 import javax.swing.JPanel;
 import java.awt.Color;
@@ -6,11 +6,13 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 @SuppressWarnings("serial")
-public class DrawHere extends JPanel implements ActionListener {
+public class DrawHere extends JPanel implements ActionListener , KeyListener {
 
 	private ArrayList<shape> l = new ArrayList<shape>();;
 
@@ -36,8 +38,7 @@ public class DrawHere extends JPanel implements ActionListener {
 			System.out.println("starting..." + c.getName());
 		}
 
-		// Set up key-pressed events
-		this.addKeyListener(l.get(0)); // arrow keys work on first
+		this.addKeyListener(this);  // handle keystrokes in this object
 
 		this.setFocusable(true);
 		this.requestFocusInWindow();
@@ -104,6 +105,23 @@ public class DrawHere extends JPanel implements ActionListener {
 			this.requestFocusInWindow();
 		}
 
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+
+	}
+
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+
+	}
+
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		System.out.println("Keycode=" + e.getKeyCode());
 	}
 
 }

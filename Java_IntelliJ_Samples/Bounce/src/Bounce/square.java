@@ -1,4 +1,4 @@
-package Part_5_Motion_Sound;
+package Bounce;
 
 import java.awt.*;
 

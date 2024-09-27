@@ -1,12 +1,9 @@
-package Part_5_Motion_Sound;
+package Bounce;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.event.KeyListener;
 
-import java.awt.event.KeyEvent;
-
-public abstract class shape extends Thread implements KeyListener {
+public abstract class shape extends Thread  {
 
 	/**
 	 * theCat will start writing on the page (g) using the text in the given
@@ -138,40 +135,6 @@ public abstract class shape extends Thread implements KeyListener {
 ////				xLocation - shapeSize / 2, yLocation - shapeSize / 2);
 //	}
 
-	@Override
-	public void keyPressed(KeyEvent e) {
-		System.out.println("Keycode=" + e.getKeyCode() + " x loc=" + xLocation
-				+ " y loc=" + yLocation);
-
-		int ch = e.getKeyCode();
-		switch (ch) {
-		case KeyEvent.VK_UP:
-			yVel++;
-			break;
-		case KeyEvent.VK_DOWN:
-			yVel--;
-			break;
-		case KeyEvent.VK_LEFT:
-			xVel--;
-			break;
-		case KeyEvent.VK_RIGHT:
-			xVel++;
-			break;
-		case KeyEvent.VK_ESCAPE:
-			System.exit(0); // end if esc pressed
-			break;
-		}
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
-		// System.out.println("B key=" + e.getKeyChar());
-	}
-
-	@Override
-	public void keyTyped(KeyEvent e) {
-		// System.out.println("C key=" + e.getKeyChar());
-	}
 
 	final int bounceSetting = 10;       // # of times to ignore next bounces
 	final int closeVal = shapeSize / 2; // How close to trigger collision

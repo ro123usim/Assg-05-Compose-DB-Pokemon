@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // button action
-
     public void onRussButtonClick(View v) {
 
         Log.d("MainActivity  BUTTON", "User tapped the  button ... MAIN");

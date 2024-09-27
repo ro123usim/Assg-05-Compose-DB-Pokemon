@@ -1,4 +1,4 @@
-package Part_5_Motion_Sound;
+package Bounce;
 
 //import java.util.Timer;
 
@@ -10,19 +10,11 @@ import javax.swing.Timer;
 /**
  * 
  * Motion and Sound:
- *   Motion of of many dots with collision sound!
+ *   Motion of many dots with collision!
  *
  *Try:
- *  1) Run the program
- *  2) theCat -> line 135 ... Print name above the "cat"
- *  3) DrawHere -> lines 29 to 32 ... add in more "cats" 
- *  4) check DrawHere -> line 123  ...make sound play when collision happens
- *  5) DrawHere -> line 82 to 89 ...draw other stuff on the screen
- *  6) Change the cat from a circle to something else theCat -> line 133
- *  7) ...even more cats?
- *
  */
-public class Main_A5 {
+public class Main {
 
 	// A timer to refresh the screen
 	static Timer timer;

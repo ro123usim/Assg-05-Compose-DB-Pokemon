@@ -59,8 +59,7 @@ public class Ship extends GameItem {
         getRect().offsetTo(x - getRect().width() / 2, y - getRect().height() / 2);  // to center of paddle
     }
 
-
-    protected boolean collides(GameItem gameItem) {
+   protected boolean collides(GameItem gameItem) {
         if (RectF.intersects(gameItem.bounds, this.getRect())) {
             return true;
         } else {
