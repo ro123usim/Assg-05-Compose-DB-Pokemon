@@ -100,6 +100,7 @@ fun ShowLayout_02() {
         Text("BottomStart", Modifier.align(Alignment.BottomStart))
         Text("BottomCenter", Modifier.align(Alignment.BottomCenter))
         Text("BottomEnd", Modifier.align(Alignment.BottomEnd))
+//        Text("RUSS", Modifier.align(Alignment.Center))
     }
 }
 

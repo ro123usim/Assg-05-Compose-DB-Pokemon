@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
+        // first save all the data files
+        saveData();
 
         // Read from internal File
         String filename2 = "myObject";
@@ -144,9 +146,8 @@ public class MainActivity extends AppCompatActivity {
         Log.v("SAVED STATE", "onResume");
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
+    public void saveData() {
+
         Log.v("SAVED STATE", "onPause - begin");
 
         // Save string
@@ -203,6 +204,14 @@ public class MainActivity extends AppCompatActivity {
 
         Log.v("SAVED STATE", "onPause - end");
 
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.v("SAVED STATE", "onPause - begin");
+
+        Log.v("SAVED STATE", "onPause - end");
     }
 
     @Override

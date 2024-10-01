@@ -164,4 +164,6 @@ public abstract class shape extends Thread  {
 		this.xVel = 2* this.xVel;
 		this.yVel = 2 * this.yVel;
 	}
+
+	abstract int updateScore();
 }

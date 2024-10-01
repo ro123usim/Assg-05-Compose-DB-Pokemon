@@ -142,6 +142,11 @@ fun Screen_02(
         ) {
             Text("Other Screen")
         }
+
+//        // add some more to the screen
+//        ShowLayout_03();
+//        ShowLayout_04();
+
     }
 }
 

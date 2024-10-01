@@ -17,4 +17,10 @@ public class square extends shape {
 		g.drawChars(shapeName.toCharArray(), 0, shapeName.toCharArray().length,
 				xLocation - shapeSize / 2, yLocation - shapeSize / 2);
     }
+
+    @Override
+    int updateScore() {
+        return 1;
+    }
 }
+

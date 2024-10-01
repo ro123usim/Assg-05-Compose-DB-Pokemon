@@ -10,95 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6db3f31-e100-4745-982a-ed0e6cf5a575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/migrations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/app/src/main/java/com/example/displaymessage/DisplayMessageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_DisplayMessage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_DisplayMessage/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M02_Calculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M02_Calculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M03_Bounce/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M03_Bounce/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M04_GUI_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M04_GUI_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/migrations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/app/src/main/java/com/russ/compose_01/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/app/src/main/java/com/russ/compose_01/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/app/src/main/java/com/russ/compose_01/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/app/src/main/java/com/russ/compose_01/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S02_Save_V03a_DB/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S03_BasicsCodelab/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S04_BasicsCodelab_Compose/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S05_BasicsCodelab_DB/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S06_BasicsCodelab_DB_Int/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S07_BasicsCodelab_DB_Int_Adaptive/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Fragments/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Fragments/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M07_Sensors/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M07_Sensors/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M10_Intents/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M10_Intents/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M10_Intents/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M10_Intents/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../M10_Intents/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +40,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Rusty\.android\avd\Medium_Phone_API_35.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Rusty\.android\avd\Pixel_6a_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -166,28 +98,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\Rusty\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\Rusty\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.russ.compose_02" />
