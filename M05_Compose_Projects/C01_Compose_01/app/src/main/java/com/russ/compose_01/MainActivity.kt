@@ -54,14 +54,14 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             text = "Hello $name!",
             modifier = modifier
         )
-//        // Add another column
-//        Text(text = "2nd line")
-//
-//        // Function to add more columns
-//        Greeting2()
-//
-//        var messages = arrayOf("Russ", "Was", "Here")
-//        Greeting3(messages)
+        // Add another column
+        Text(text = "2nd line")
+
+        // Function to add more columns
+        Greeting2()
+
+        var messages = arrayOf("Russ", "Was", "Here")
+        Greeting3(messages)
 
     }
     Log.d(TAG, "Greeting() called")
