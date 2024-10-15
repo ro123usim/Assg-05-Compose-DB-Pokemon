@@ -21,6 +21,8 @@ public class BouncingBallView extends View {
     private Ball ball_1;  // use this to reference first ball in arraylist
     private Box box;
 
+    DBClass DBtest; // = new DBClass(context);
+
     // For touch inputs - previous touch (x, y)
     private float previousX;
     private float previousY;
@@ -43,7 +45,7 @@ public class BouncingBallView extends View {
         Log.w("BouncingBallLog", "Just added another bouncing ball");
 
         // Get from DB
-        DBClass DBtest = new DBClass(context);
+        DBtest = new DBClass(context);
         List<DataModel> ALL = DBtest.findAll();
         for (DataModel one : ALL) {
             Log.w("DataModel", "Item => " + one.toString());

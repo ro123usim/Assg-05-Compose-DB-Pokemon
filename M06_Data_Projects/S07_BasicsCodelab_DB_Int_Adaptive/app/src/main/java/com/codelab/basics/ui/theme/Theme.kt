@@ -40,18 +40,18 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    surface = Blue,
-    onSurface = Color.White,
-    primary = LightBlue,
+    surface = Red, // Blue,
+    onSurface = LightBlue,
+    primary = LightRed,
     onPrimary = Navy
 )
 
 @Suppress("DEPRECATION")
 @Composable
 fun BasicsCodelabTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = false,   //  isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,  // was true
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

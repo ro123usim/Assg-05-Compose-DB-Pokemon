@@ -21,6 +21,8 @@ public class BouncingBallView extends View {
     private Ball ball_1;  // use this to reference first ball in arraylist
     private Box box;
 
+    DBClass DBtest;  // class level declaration
+
     // For touch inputs - previous touch (x, y)
     private float previousX;
     private float previousY;
@@ -34,16 +36,16 @@ public class BouncingBallView extends View {
         box = new Box(Color.BLACK);  // ARGB
 
         //ball_1 = new Ball(Color.GREEN);
-        balls.add(new Ball(Color.GREEN));
-        ball_1 = balls.get(0);  // points ball_1 to the first; (zero-ith) element of list
-        Log.w("BouncingBallLog", "Just added a bouncing ball");
+//        balls.add(new Ball(Color.GREEN));
+//        ball_1 = balls.get(0);  // points ball_1 to the first; (zero-ith) element of list
+//        Log.w("BouncingBallLog", "Just added a bouncing ball");
 
         //ball_2 = new Ball(Color.CYAN);
-        balls.add(new Ball(Color.CYAN));
-        Log.w("BouncingBallLog", "Just added another bouncing ball");
+//        balls.add(new Ball(Color.CYAN));
+//        Log.w("BouncingBallLog", "Just added another bouncing ball");
 
         // Get from DB
-        DBClass DBtest = new DBClass(context);
+        DBtest = new DBClass(context);
         List<DataModel> ALL = DBtest.findAll();
         for (DataModel one : ALL) {
             Log.w("DataModel", "Item => " + one.toString());
@@ -150,9 +152,14 @@ public class BouncingBallView extends View {
         // make random x,y, velocity
         int x = rand.nextInt(viewWidth);
         int y = rand.nextInt(viewHeight);
-        int dx = rand.nextInt(50);
-        int dy = rand.nextInt(20);
+        int dx = 25 - rand.nextInt(50);
+        int dy = 10 - rand.nextInt(20);
 
         balls.add(new Ball(Color.RED, x, y, dx, dy));  // add ball at every touch event
+
+        Log.v("BouncingBallView  BUTTON", "n...add ball to DB");
+        DataModel newBall = new DataModel(0,(float)x,(float)y,(float)dx,(float)dy);
+        DBtest.save(newBall);
+
     }
 }

@@ -8,6 +8,14 @@ public class DataModel {
     private String str_col;
     private Integer num_col;
 
+    // Change to reflect Pokemon
+//    private long id;
+//    private String Pokemon_Name;
+//    private String Pokemon_Type;
+//    private Integer Pokemon_Number;
+    // ...
+
+
     public DataModel() {
         this.setId(0);
         this.setModelName("default modelName");

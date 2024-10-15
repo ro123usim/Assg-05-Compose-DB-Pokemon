@@ -62,7 +62,6 @@ import androidx.compose.ui.graphics.Color.Companion.Red
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.codelab.basics.ui.theme.BasicsCodelabTheme
 import com.codelab.basics.ui.theme.Blue
 
@@ -81,6 +80,8 @@ import com.codelab.basics.ui.theme.Blue
  */
 class MainActivity : ComponentActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -95,6 +96,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                     // Get the data from the DB for display
                     , names = DBtest.findAll()
+                    , DBtest
                 )
             }
         }
@@ -104,7 +106,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp(
     modifier: Modifier = Modifier,
-    names: List<DataModel>
+    names: List<DataModel>,
+    DBtest: DBClass
 ) {
     val windowInfo = rememberWindowInfo()  // get size of this screen
     var index by remember { mutableIntStateOf(-1) } // which name to display
@@ -121,7 +124,8 @@ fun MyApp(
                 Log.d("CodeLab_DB", "MyApp1: index = $index firstTime = $showMaster")
                 showMaster = false
                 ShowPageMaster(names = names,
-                    updateIndex = { index = it })
+                    updateIndex = { index = it }
+                , DBtest = DBtest)
             } else {
                 Log.d("CodeLab_DB", "MyApp2: $index ")
                 ShowPageDetails(name = names[index],  // List starts at 0, DB records start at 1
@@ -145,7 +149,8 @@ fun MyApp(
                         .background(Blue)
                 ) {
                     ShowPageMaster(names = names,
-                        updateIndex = { index = it })
+                        updateIndex = { index = it },
+                        DBtest = DBtest)
                 }
                 Column(
                     Modifier
@@ -166,14 +171,24 @@ fun MyApp(
 private fun ShowPageMaster(
     modifier: Modifier = Modifier,
     names: List<DataModel>,
-    updateIndex: (index: Int) -> Unit
+    updateIndex: (index: Int) -> Unit,
+    DBtest: DBClass
 ) {
+
+    // you have all "names"
+
+    // find most accessed name
+
+   //  Show that ... most accessed name
+
+
+
     LazyColumn(
         modifier = modifier.padding(vertical = 4.dp)
     ) {
         itemsIndexed(items = names) { pos, name ->
             Log.d("CodeLab_DB", "Item at index $pos is $name")
-            ShowEachListItem(name = name, pos, updateIndex)
+            ShowEachListItem(name = name, pos, updateIndex, DBtest)
         }
     }
 }
@@ -182,7 +197,8 @@ private fun ShowPageMaster(
 private fun ShowEachListItem(
     name: DataModel,
     pos: Int,
-    updateIndex: (index: Int) -> Unit
+    updateIndex: (index: Int) -> Unit,
+    DBtest: DBClass
 ) {
     Card(
         colors = CardDefaults.cardColors(
@@ -190,7 +206,7 @@ private fun ShowEachListItem(
         ),
         modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
     ) {
-        CardContent(name, pos, updateIndex)
+        CardContent(name, pos, updateIndex, DBtest )
         Log.d("CodeLab_DB", "Greeting: ")
     }
 }
@@ -199,7 +215,8 @@ private fun ShowEachListItem(
 private fun CardContent(
     name: DataModel,
     pos: Int,
-    updateIndex: (index: Int) -> Unit
+    updateIndex: (index: Int) -> Unit,
+    DBtest: DBClass
 ) {
     var expanded by remember { mutableStateOf(false) }
     Row(
@@ -228,6 +245,9 @@ private fun CardContent(
                         "CodeLab_DB",
                         "Clicked = ${name.toString()} "
                     )
+                    // call to increment access count
+                    DBtest.incAccessCount(name.id)
+                    Log.d("CodeLab_DB", "Inc Access = ${name.toString()} ")
                 })
             { Text(text = "Details ${pos}") }
             Text(

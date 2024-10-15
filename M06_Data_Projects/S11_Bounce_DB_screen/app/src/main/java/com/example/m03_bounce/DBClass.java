@@ -53,12 +53,12 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
         db.execSQL(SQL_CREATE_TABLE);
         Log.d("DBClass", "DB onCreate()");
 
-        db.execSQL("INSERT INTO " + TABLE_NAME + " (X, Y, DX, DY)    VALUES" +
-                "(3.0, 22.1, 0.5, 0.7)," +
-                "(132.0, 22.3, 0.5, -1.7)," +
-                "(134.0, 122.5, 0.5, 2.7)," +
-                "(163.0, 122.7, 0.5, -6.7)," +
-                "(283.0, 222.9, 0.5, 4.7)");
+//        db.execSQL("INSERT INTO " + TABLE_NAME + " (X, Y, DX, DY)    VALUES" +
+//                "(3.0, 22.1, 0.5, 0.7)," +
+//                "(132.0, 22.3, 0.5, -1.7)," +
+//                "(134.0, 122.5, 0.5, 2.7)," +
+//                "(163.0, 122.7, 0.5, -6.7)," +
+//                "(283.0, 222.9, 0.5, 4.7)");
     }
 
     @Override
@@ -124,8 +124,8 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
     private void addDefaultRows() {
         // Call count once
         int doCount = this.count();
-        if (doCount > 20) {
-            Log.v("DBClass", "already 20 rows in DB");
+        if (doCount > 2) {
+            Log.v("DBClass", "already rows in DB");
 
         } else {
             Log.v("DBClass", "n...add some rows");
@@ -133,10 +133,10 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
             this.save(a);
             a = new DataModel(2, 30f,30f,3f,-3f);
             this.save(a);
-            a = new DataModel(3, 40f,40f,1f,4f);
-            this.save(a);
-            a = new DataModel(4, 60f,60f,-4f,1f);
-            this.save(a);
+//            a = new DataModel(3, 40f,40f,1f,4f);
+//            this.save(a);
+//            a = new DataModel(4, 60f,60f,-4f,1f);
+//            this.save(a);
 
         }
 

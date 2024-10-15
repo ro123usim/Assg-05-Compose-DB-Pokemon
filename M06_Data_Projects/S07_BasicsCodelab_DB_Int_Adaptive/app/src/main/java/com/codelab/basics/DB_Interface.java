@@ -17,4 +17,10 @@ public interface DB_Interface {
 
     public String getNameById(Long id);  // Not implemented
 
+    public DataModel getMax();
+
+    public void incAccessCount(long id);
+
+    public long getMostAccessed();
+
 }

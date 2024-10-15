@@ -53,17 +53,17 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
         db.execSQL(SQL_CREATE_TABLE);
         Log.d("DBClass", "DB onCreate()");
 
-        // Old code with embedded SQL
+//        // Old code with embedded SQL
 //        db.execSQL("CREATE TABLE sample_table (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, str_col VARCHAR(256), num_col INTEGER)");
 //
-//        db.execSQL(
-//                "INSERT INTO sample_table(str_col,num_col) VALUES('Ford', 100)");
-//        db.execSQL(
-//                "INSERT INTO sample_table(str_col,num_col) VALUES('Toyota', 200)");
-//        db.execSQL(
-//                "INSERT INTO sample_table(str_col,num_col) VALUES('Honda', 300)");
-//        db.execSQL(
-//                "INSERT INTO sample_table(str_col,num_col) VALUES('GM', 400)");
+        db.execSQL(
+                "INSERT INTO sample_table(str_col,num_col) VALUES('Ford Russy', 100)");
+        db.execSQL(
+                "INSERT INTO sample_table(str_col,num_col) VALUES('Toyota', 200)");
+        db.execSQL(
+                "INSERT INTO sample_table(str_col,num_col) VALUES('Honda', 300)");
+        db.execSQL(
+                "INSERT INTO sample_table(str_col,num_col) VALUES('GM', 400)");
     }
 
     @Override
@@ -103,6 +103,10 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
         db.insert(TABLE_NAME, // table
                 null, //nullColumnHack
                 values); // key/value -> keys = column names/ values = column values
+
+        //
+        //db.execSQL("update .......");
+
 
         // 4. close
         db.close();
@@ -179,9 +183,51 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
         return temp;
     }
 
+
+
+
     @Override
     public String getNameById(Long id) {
         return null;
+    }
+
+    @Override
+    public DataModel getMax() {
+        return null;
+
+        // get all
+
+        // find max
+
+        // return max datamodel
+
+    }
+
+    @Override
+    public void incAccessCount(long id) {
+        Log.v("DBClass", "id = " + id);
+        // update sample_table set num_col = num_col + 1 where id=1;
+
+        String cmdString = "update " + TABLE_NAME + " set num_col = num_col + 1 where id="+id;
+        Log.v("DBClass", "cmdString = " + cmdString);
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL(cmdString);
+        db.close();
+
+    }
+
+    @Override
+    public long getMostAccessed() {
+
+        // get most accessed ID from DB
+
+
+        // loop through all records to get most accessed
+        long mostID = 0;
+
+
+        return 0;
     }
 
     // Dump the DB as a test
