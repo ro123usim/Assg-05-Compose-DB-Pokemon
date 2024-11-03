@@ -150,6 +150,7 @@ public class BouncingBallView extends View implements SensorEventListener {
         balls.add(new Ball(Color.RED, x, y, dx, dy));  // add ball at every touch event
     }
 
+
     @Override
     public void onSensorChanged(SensorEvent event) {
 

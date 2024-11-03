@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("Save_v03", "Sleep ..........................");
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
