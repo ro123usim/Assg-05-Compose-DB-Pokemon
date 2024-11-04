@@ -20,9 +20,9 @@ public class threadMain {
 
         thread b = new thread("Craig33", 956537833, 546456433, "boo33@email.com");
         b.start();
-
-        thread c = new thread("Joe44", 955543844, 546565444, "cic44@email.com");
-        c.start();
+//
+//        thread c = new thread("Joe44", 955543844, 546565444, "cic44@email.com");
+//        c.start();
 
         for (int i = 0; i < 10; i++) {
             try {
