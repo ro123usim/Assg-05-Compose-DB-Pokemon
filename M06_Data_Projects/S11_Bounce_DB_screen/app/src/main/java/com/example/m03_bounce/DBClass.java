@@ -120,36 +120,36 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
 
     private Random r = new Random();
 
-    // Add Sample rows
-    private void addDefaultRows() {
-        // Call count once
-        int doCount = this.count();
-        if (doCount > 2) {
-            Log.v("DBClass", "already rows in DB");
-
-        } else {
-            Log.v("DBClass", "n...add some rows");
-            DataModel a = new DataModel(1, 20.0f,20.0f,-4.0f,4.0f);
-            this.save(a);
-            a = new DataModel(2, 30f,30f,3f,-3f);
-            this.save(a);
-//            a = new DataModel(3, 40f,40f,1f,4f);
+//    // Add Sample rows
+//    private void addDefaultRows() {
+//        // Call count once
+//        int doCount = this.count();
+//        if (doCount > 2) {
+//            Log.v("DBClass", "already rows in DB");
+//
+//        } else {
+//            Log.v("DBClass", "n...add some rows");
+//            DataModel a = new DataModel(1, 20.0f,20.0f,-4.0f,4.0f);
 //            this.save(a);
-//            a = new DataModel(4, 60f,60f,-4f,1f);
+//            a = new DataModel(2, 30f,30f,3f,-3f);
 //            this.save(a);
-
-        }
+////            a = new DataModel(3, 40f,40f,1f,4f);
+////            this.save(a);
+////            a = new DataModel(4, 60f,60f,-4f,1f);
+////            this.save(a);
+//
+//        }
 
 //        DataModel a = new DataModel(1, "Rusty Bucket", r.nextInt(500));
 //        this.save(a);
-    }
+//    }
 
     @Override
     public List<DataModel> findAll() {
         List<DataModel> temp = new ArrayList<DataModel>();
 
         // if no rows, add
-        addDefaultRows();
+        //addDefaultRows();
 
         // 1. build the query
         String query = "SELECT  * FROM " + TABLE_NAME;
@@ -175,6 +175,11 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
 
     @Override
     public String getNameById(Long id) {
+
+
+
+
+
         return null;
     }
 

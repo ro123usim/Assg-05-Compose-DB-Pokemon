@@ -10,27 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6db3f31-e100-4745-982a-ed0e6cf5a575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/migrations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_IntelliJ_Samples/Bounce/src/Bounce/square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C01_Compose_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/app/src/main/java/com/russ/compose_01/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/app/src/main/java/com/russ/compose_01/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C02_Compose_01_UI_Layout/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/app/src/main/java/com/russ/compose_01/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_01/app/src/main/java/com/russ/compose_01/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C03_Compose_01_UI_Events_02/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C04_Compose_02_DB_Background/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M06_Data_Projects/S01_Save_V01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +21,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Rusty\.android\avd\Pixel_6a_API_34.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Rusty\.android\avd\Copy_of_Pixel_6a_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,30 +35,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Compose_02" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Compose_02" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Compose_02" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Compose_02" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -98,28 +56,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/git/MOBI3002/M05_Compose_Projects/C04_Compose_02_DB_Background&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/temp5/MOBI3002/M06_Data_Projects/S11_Bounce_DB_screen"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\Rusty\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\Rusty\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.russ.compose_02" />
