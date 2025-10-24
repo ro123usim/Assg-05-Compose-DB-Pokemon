@@ -40,7 +40,6 @@ public class Entity {
     public Vector3f getPosition() {
         return position;
     }
-    public void setPosition(Vector3f position) { this.position=position;}
 
     public Quaternionf getRotation() {
         return rotation;

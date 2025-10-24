@@ -1,7 +1,10 @@
 package com.example.m10_intents;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -114,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
         Log.w("MainActivity-INTENT", "sendMessage4-2: " + message);
     }
 
-
     /**
      * Returns after photo picked from gallery
      * http://codetheory.in/android-pick-select-image-from-gallery-with-intents/
@@ -140,4 +142,61 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    /**
+     * Updated intent usage to get a result from another activity
+     *
+     * Intent is not used, instead ActivityResultLauncher is used
+     * Ask for a photo not from Gallery, but to be taken
+     * http://codetheory.in/android-pick-select-image-from-gallery-with-intents/
+     */
+    public void sendMessage5(View view) {
+        // ACTION_SEND intent with EXTRA_TEXT ... goes to messaging, email, ...
+
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        Log.w("MainActivity-INTENT", "sendMessage5-1: " + message);
+
+        // openCamera method
+        // Create a content URI for the image file
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE, "New Picture");
+        values.put(MediaStore.Images.Media.DESCRIPTION, "From the Camera");
+        imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+        // Launch the camera intent using the ActivityResultLauncher
+        takePictureLauncher.launch(imageUri);
+
+        Log.w("MainActivity-INTENT", "sendMessage5-2: " + message);
+    }
+
+
+    private Uri imageUri;
+
+    // Register the ActivityResultLauncher for camera capture
+    private ActivityResultLauncher<Uri> takePictureLauncher = registerForActivityResult(
+            new ActivityResultContracts.TakePicture(),
+            result -> {
+                if (result) {
+                    // Picture was successfully taken, load it into the ImageView
+                    try {
+                        Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                        //imageView.setImageBitmap(bitmap);
+
+                        // as before...place image on the screen
+                        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setImageBitmap(bitmap);
+
+                        Log.w("MainActivity-INTENT", "sendMessage5-3: " );
+                    } catch (Exception e) {
+                        Log.w("MainActivity-INTENT", "sendMessage5-4: " );
+                        e.printStackTrace();
+                    }
+                } else {
+                    // User cancelled or an error occurred
+                    // Handle accordingly, e.g., show a toast message
+                    Log.w("MainActivity-INTENT", "sendMessage5-5: ");
+                }
+            }
+    );
 }

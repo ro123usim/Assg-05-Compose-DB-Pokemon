@@ -17,10 +17,8 @@ public class Main implements IAppLogic {
 
     private AnimationData animationData1;
     private AnimationData animationData2;
-    private MovingEntity cubeEntity1;
-    private MovingEntity cubeEntity2;
-//    private Entity cubeEntity1;
-//    private Entity cubeEntity2;
+    private Entity cubeEntity1;
+    private Entity cubeEntity2;
     private float lightAngle;
     private float rotation;
 
@@ -70,12 +68,12 @@ public class Main implements IAppLogic {
         Model cubeModel = ModelLoader.loadModel("cube-model", "resources/models/cube/cube.obj",
                 scene.getTextureCache(), scene.getMaterialCache(), false);
         scene.addModel(cubeModel);
-        cubeEntity1 = new MovingEntity("cube-entity-1", cubeModel.getId());
+        cubeEntity1 = new Entity("cube-entity-1", cubeModel.getId());
         cubeEntity1.setPosition(0, 2, -1);
         cubeEntity1.updateModelMatrix();
         scene.addEntity(cubeEntity1);
 
-        cubeEntity2 = new MovingEntity("cube-entity-2", cubeModel.getId());
+        cubeEntity2 = new Entity("cube-entity-2", cubeModel.getId());
         cubeEntity2.setPosition(-2, 2, -1);
         cubeEntity2.updateModelMatrix();
         scene.addEntity(cubeEntity2);
@@ -162,19 +160,8 @@ public class Main implements IAppLogic {
         }
         cubeEntity1.setRotation(1, 1, 1, (float) Math.toRadians(rotation));
         cubeEntity1.updateModelMatrix();
-        cubeEntity1.MoveEntity(0.04f,0.07f,0.05f);
 
         cubeEntity2.setRotation(1, 1, 1, (float) Math.toRadians(360 - rotation));
         cubeEntity2.updateModelMatrix();
-        cubeEntity2.MoveEntity(-0.06f,-0.08f,-0.09f);
-
-        if (cubeEntity1.collides(cubeEntity2)) {
-            cubeEntity1.setPosition(0f,0f,0f);
-            cubeEntity1.MoveEntity(-0.04f,-0.01f,-0.03f);
-
-            cubeEntity2.setPosition(2f,2f,2f);
-            cubeEntity2.MoveEntity(0.02f,0.02f,0.02f);
-        }
-
     }
 }
