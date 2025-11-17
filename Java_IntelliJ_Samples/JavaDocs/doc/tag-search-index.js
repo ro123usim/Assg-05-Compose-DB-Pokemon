@@ -1,0 +1,1 @@
+tagSearchIndex = [{"l":"Package Specification","h":"package myPackage","d":"Section","u":"myPackage/package-summary.html#package-specification-heading"},{"l":"Related Documentation","h":"package myPackage","d":"Section","u":"myPackage/package-summary.html#related-documentation-heading"}];updateSearchResults();
