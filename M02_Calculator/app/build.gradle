@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.calculator'
+    namespace 'com.example.m02_calculator'
     compileSdk 33
 
     defaultConfig {
