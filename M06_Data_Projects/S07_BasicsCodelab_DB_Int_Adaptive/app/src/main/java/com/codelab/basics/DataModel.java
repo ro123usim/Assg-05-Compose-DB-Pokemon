@@ -1,63 +1,49 @@
 package com.codelab.basics;
 
-// Object DB ... see Room for Android Studio
-// https://developer.android.com/training/data-storage/room
 public class DataModel {
 
-    private long id;
-    private String str_col;
-    private Integer num_col;
+    private int id;
+    private String name;
+    private int powerLevel;
+    private String description;
+    private int accessCount;
 
-    // Change to reflect Pokemon
-//    private long id;
-//    private String Pokemon_Name;
-//    private String Pokemon_Type;
-//    private Integer Pokemon_Number;
-    // ...
-
-
-    public DataModel() {
-        this.setId(0);
-        this.setModelName("default modelName");
-        this.setModelNumber(0);
+    public DataModel(int id, String name, int powerLevel, String description, int accessCount) {
+        this.id = id;
+        this.name = name;
+        this.powerLevel = powerLevel;
+        this.description = description;
+        this.accessCount = accessCount;
     }
 
-    public DataModel(long id, String modelName, Integer modelNumber) {
-        this.setId(id);
-        this.setModelName(modelName);
-        this.setModelNumber(modelNumber);
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPowerLevel() {
+        return powerLevel;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getAccessCount() {
+        return accessCount;
     }
 
     @Override
     public String toString() {
-        return "DataModel{" +
-                "id=" + getId() +
-                ", modelName='" + getModelName() + '\'' +
-                ", modelNumber=" + getModelNumber();
+        return "Pokemon{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", powerLevel=" + powerLevel +
+                ", description='" + description + '\'' +
+                ", accessCount=" + accessCount +
+                '}';
     }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getModelName() {
-        return str_col;
-    }
-
-    public void setModelName(String modelName) {
-        this.str_col = modelName;
-    }
-
-    public Integer getModelNumber() {
-        return num_col;
-    }
-
-    public void setModelNumber(Integer modelNumber) {
-        this.num_col = modelNumber;
-    }
-
 }

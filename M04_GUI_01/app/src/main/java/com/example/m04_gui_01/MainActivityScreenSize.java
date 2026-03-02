@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.util.Log;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -90,6 +92,10 @@ public class MainActivityScreenSize extends AppCompatActivity {
         screenLayout &= Configuration.SCREENLAYOUT_LONG_MASK;
         t.append("\n screenLayout & long mask (HEX) = " + (Integer.toHexString((screenLayout))));
 
+    }
+
+    public void addClicked(View view) {
+        Log.d("CALC", "Add button pressed");
     }
 
 

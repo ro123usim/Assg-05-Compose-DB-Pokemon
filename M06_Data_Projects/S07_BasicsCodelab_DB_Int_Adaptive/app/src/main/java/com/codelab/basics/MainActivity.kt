@@ -85,18 +85,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Open the DB
-        val DBtest = DBClass(this@MainActivity)
-        Log.d("CodeLab_DB", "onCreate: ")
+        val DBtest = DBClass(this)
 
-        // Then the real data
         setContent {
             BasicsCodelabTheme {
                 MyApp(
-                    modifier = Modifier.fillMaxSize()
-                    // Get the data from the DB for display
-                    , names = DBtest.findAll()
-                    , DBtest
+                    modifier = Modifier.fillMaxSize(),
+                    DBtest = DBtest
                 )
             }
         }
@@ -106,89 +101,115 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp(
     modifier: Modifier = Modifier,
-    names: List<DataModel>,
     DBtest: DBClass
 ) {
-    val windowInfo = rememberWindowInfo()  // get size of this screen
-    var index by remember { mutableIntStateOf(-1) } // which name to display
-    var showMaster: Boolean = (index == -1) // fudge to force master list first, when compact
+    var names by remember { mutableStateOf(DBtest.findAll()) }
+    val windowInfo = rememberWindowInfo()
+    var index by remember { mutableIntStateOf(-1) }
 
-    Surface(modifier, color = MaterialTheme.colorScheme.background) {
-        // either one page at a time, or both side-by-side
-        Log.d(
-            "CodeLab_DB",
-            "MyApp0: index = $index "
-        )
+    Surface(
+        modifier = modifier.background(Color(0xFFE3F2FD)),
+        color = Color(0xFFE3F2FD)
+    ) {
+
         if (windowInfo.screenWidthInfo is WindowInfo.WindowType.Compact) {
-            if (showMaster or ((index < 0) or (index >= names.size))) {      //Always Check endpoints!
-                Log.d("CodeLab_DB", "MyApp1: index = $index firstTime = $showMaster")
-                showMaster = false
-                ShowPageMaster(names = names,
-                    updateIndex = { index = it }
-                , DBtest = DBtest)
+
+            if (index < 0 || index >= names.size) {
+
+                ShowPageMaster(
+                    names = names,
+                    updateIndex = { index = it },
+                    DBtest = DBtest,
+                    refresh = { names = DBtest.findAll() }
+                )
+
             } else {
-                Log.d("CodeLab_DB", "MyApp2: $index ")
-                ShowPageDetails(name = names[index],  // List starts at 0, DB records start at 1
-                    index = index,               // use index for prev, next screen
-                    updateIndex = { index = it })
+
+                ShowPageDetails(
+                    name = names[index],
+                    index = index,
+                    updateIndex = { index = it }
+                )
             }
-        } else {  // show master details side-by-side
-            // force visible entry if index=-1
-            if (index < 0) {
-                index = 0
-            }
+
+        } else {
+
+            if (index < 0) index = 0
+
             Row(
                 Modifier
                     .fillMaxSize()
                     .padding(8.dp)
             ) {
+
                 Column(
                     Modifier
                         .fillMaxWidth()
                         .weight(1f)
                         .background(Blue)
                 ) {
-                    ShowPageMaster(names = names,
+                    ShowPageMaster(
+                        names = names,
                         updateIndex = { index = it },
-                        DBtest = DBtest)
+                        DBtest = DBtest,
+                        refresh = { names = DBtest.findAll() }
+                    )
                 }
+
                 Column(
                     Modifier
                         .fillMaxWidth()
                         .weight(1f)
-                        .background(Red)
+                        .background(Color.Red)
                 ) {
-                    ShowPageDetails(name = names[index],  // List starts at 0, DB records start at 1
-                        index = index,               // use index for prev, next screen
-                        updateIndex = { index = it })
+                    ShowPageDetails(
+                        name = names[index],
+                        index = index,
+                        updateIndex = { index = it }
+                    )
                 }
             }
         }
     }
 }
 
+
 @Composable
 private fun ShowPageMaster(
     modifier: Modifier = Modifier,
     names: List<DataModel>,
     updateIndex: (index: Int) -> Unit,
-    DBtest: DBClass
+    DBtest: DBClass,
+    refresh: () -> Unit
 ) {
 
-    // you have all "names"
+    val favoriteId = DBtest.getMostAccessed()
+    val favorite = names.find { it.id == favoriteId.toInt() }
 
-    // find most accessed name
+    Column {
 
-   //  Show that ... most accessed name
+        // ⭐ Favorite Pokémon Display
+        favorite?.let {
+            Text(
+                text = "⭐ Favorite Pokémon: ${it.name}",
+                style = MaterialTheme.typography.headlineLarge,
+                modifier = Modifier.padding(16.dp),
+                color = Color.Magenta
+            )
+        }
 
-
-
-    LazyColumn(
-        modifier = modifier.padding(vertical = 4.dp)
-    ) {
-        itemsIndexed(items = names) { pos, name ->
-            Log.d("CodeLab_DB", "Item at index $pos is $name")
-            ShowEachListItem(name = name, pos, updateIndex, DBtest)
+        LazyColumn(
+            modifier = modifier.padding(vertical = 4.dp)
+        ) {
+            itemsIndexed(items = names) { pos, name ->
+                ShowEachListItem(
+                    name = name,
+                    pos = pos,
+                    updateIndex = updateIndex,
+                    DBtest = DBtest,
+                    refresh = refresh
+                )
+            }
         }
     }
 }
@@ -198,16 +219,19 @@ private fun ShowEachListItem(
     name: DataModel,
     pos: Int,
     updateIndex: (index: Int) -> Unit,
-    DBtest: DBClass
+    DBtest: DBClass,
+    refresh: () -> Unit
 ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primary
+            containerColor =
+                if (name.powerLevel > 80) Color(0xFFFFCDD2)
+                else MaterialTheme.colorScheme.primary
         ),
-        modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
+        modifier = Modifier.padding(vertical = 6.dp, horizontal = 8.dp),
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(20.dp)
     ) {
-        CardContent(name, pos, updateIndex, DBtest )
-        Log.d("CodeLab_DB", "Greeting: ")
+        CardContent(name, pos, updateIndex, DBtest, refresh)
     }
 }
 
@@ -216,12 +240,14 @@ private fun CardContent(
     name: DataModel,
     pos: Int,
     updateIndex: (index: Int) -> Unit,
-    DBtest: DBClass
+    DBtest: DBClass,
+    refresh: () -> Unit
 ) {
     var expanded by remember { mutableStateOf(false) }
+
     Row(
         modifier = Modifier
-            .padding(12.dp)
+            .padding(16.dp)
             .animateContentSize(
                 animationSpec = spring(
                     dampingRatio = Spring.DampingRatioMediumBouncy,
@@ -232,46 +258,51 @@ private fun CardContent(
         Column(
             modifier = Modifier
                 .weight(1f)
-                .padding(12.dp)
         ) {
+
             Button(
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.Green,
-                    contentColor = Color.Red
+                    contentColor = Color.White
                 ),
                 onClick = {
-                    updateIndex(pos);
-                    Log.d(
-                        "CodeLab_DB",
-                        "Clicked = ${name.toString()} "
-                    )
-                    // call to increment access count
-                    DBtest.incAccessCount(name.id)
-                    Log.d("CodeLab_DB", "Inc Access = ${name.toString()} ")
-                })
-            { Text(text = "Details ${pos}") }
+                    updateIndex(pos)
+                    DBtest.incAccessCount(name.id.toLong())
+                    refresh()
+                }
+            ) {
+                Text(text = "View Details")
+            }
+
             Text(
-                // Just the name of this record
-                text = name.modelName,
-                style = MaterialTheme.typography.headlineMedium.copy(
-                    fontWeight = FontWeight.ExtraBold
-                )
+                text = name.name,
+                style = MaterialTheme.typography.headlineLarge,
+                fontWeight = FontWeight.Bold
             )
+
+            Text(
+                text = "Power Level: ${name.powerLevel}",
+                style = MaterialTheme.typography.bodyLarge
+            )
+
+            Text(
+                text = "Viewed: ${name.accessCount} times",
+                style = MaterialTheme.typography.bodyMedium,
+                color = Color.DarkGray
+            )
+
             if (expanded) {
                 Text(
-                    text = (name.toString())  // Full toString of data
+                    text = name.description,
+                    modifier = Modifier.padding(top = 8.dp)
                 )
-                Log.d("CodeLab_DB", "Expanded name = ${name.toString()} ")
             }
         }
+
         IconButton(onClick = { expanded = !expanded }) {
             Icon(
                 imageVector = if (expanded) Filled.ExpandLess else Filled.ExpandMore,
-                contentDescription = if (expanded) {
-                    stringResource(R.string.show_less)
-                } else {
-                    stringResource(R.string.show_more)
-                }
+                contentDescription = null
             )
         }
     }

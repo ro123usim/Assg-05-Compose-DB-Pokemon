@@ -1,26 +1,24 @@
 package com.codelab.basics;
 
 import java.util.List;
-import java.util.Map;
 
 public interface DB_Interface {
 
-    public int count();
+    int count();
 
-    public int save(DataModel dataModel);
+    int save(DataModel dataModel);
 
-    public int update(DataModel dataModel);  // Not implemented
+    int update(DataModel dataModel);
 
-    public int deleteById(Long id);  // Not implemented
+    int deleteById(Long id);
 
-    public List<DataModel> findAll();
+    List<DataModel> findAll();
 
-    public String getNameById(Long id);  // Not implemented
+    String getNameById(Long id);
 
-    public DataModel getMax();
+    DataModel getMax();
 
-    public void incAccessCount(long id);
+    void incAccessCount(long id);
 
-    public long getMostAccessed();
-
+    long getMostAccessed();
 }

@@ -35,10 +35,10 @@ public class BouncingBallView extends View {
 
         box = new Box(Color.LTGRAY);
 
-        balls.add(new Ball(Color.GREEN));
+        balls.add(new Ball(Color.GREEN, 100, 100, 5, 5, 30));
         ball_1 = balls.get(0);
 
-        balls.add(new Ball(Color.CYAN));
+        balls.add(new Ball(Color.CYAN, 200, 200, 5, 5, 30));
 
         targetRect = new RectF(300, 300, 500, 400);
         rectPaint.setColor(Color.BLACK);
@@ -52,6 +52,7 @@ public class BouncingBallView extends View {
 
         box.draw(canvas);
 
+        // draw balls and check collision
         for (Ball b : balls) {
             b.draw(canvas);
             b.moveWithCollisionDetection(box);
@@ -62,6 +63,7 @@ public class BouncingBallView extends View {
             }
         }
 
+        // draw squares
         for (Square s : squares) {
             s.draw(canvas);
             s.moveWithCollisionDetection(box);
@@ -99,29 +101,20 @@ public class BouncingBallView extends View {
 
                 float swipeSpeed = Math.abs(deltaX) + Math.abs(deltaY);
 
+                // Calculate shape size based on swipe speed
+                float size = 20 + swipeSpeed / 5; // bigger for faster swipes
+
                 if (swipeSpeed > 50) {
-                    squares.add(new Square(
-                            randomColor,
-                            previousX,
-                            previousY,
-                            deltaX * 2,
-                            deltaY * 2
-                    ));
-                    Log.d("SHAPE", "Square created");
+                    squares.add(new Square(randomColor, previousX, previousY, deltaX * 2, deltaY * 2, size));
+                    Log.d("SHAPE", "Square created, size=" + size);
                 } else {
-                    balls.add(new Ball(
-                            randomColor,
-                            previousX,
-                            previousY,
-                            deltaX * 0.5f,
-                            deltaY * 0.5f
-                    ));
-                    Log.d("SHAPE", "Circle created");
+                    balls.add(new Ball(randomColor, previousX, previousY, deltaX * 0.5f, deltaY * 0.5f, size));
+                    Log.d("SHAPE", "Circle created, size=" + size);
                 }
 
                 if (balls.size() > 20) {
                     balls.clear();
-                    balls.add(new Ball(Color.RED));
+                    balls.add(new Ball(Color.RED, 100, 100, 5, 5, 30));
                     ball_1 = balls.get(0);
                 }
         }
@@ -132,9 +125,8 @@ public class BouncingBallView extends View {
         return true;
     }
 
+    // For your button
     public void RussButtonPressed() {
-        Log.d("BouncingBallView", "Button pressed");
-
         int viewWidth = this.getMeasuredWidth();
         int viewHeight = this.getMeasuredHeight();
 
@@ -149,9 +141,8 @@ public class BouncingBallView extends View {
         int b = rand.nextInt(256);
         int randomColor = Color.rgb(r, g, b);
 
-        balls.add(new Ball(randomColor, x, y, dx, dy));
+        balls.add(new Ball(randomColor, x, y, dx, dy, 30));
     }
-
-
 }
+
 
