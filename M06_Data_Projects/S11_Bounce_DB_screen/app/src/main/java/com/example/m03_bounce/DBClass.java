@@ -61,6 +61,12 @@ public class DBClass extends SQLiteOpenHelper implements DB_Interface {
 //                "(283.0, 222.9, 0.5, 4.7)");
     }
 
+    public void deleteAll() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, null, null);
+        db.close();
+        Log.v("DBClass", "All rows deleted");
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i2) {
         Log.d("DBClass", "DB onUpgrade() to version " + DATABASE_VERSION);

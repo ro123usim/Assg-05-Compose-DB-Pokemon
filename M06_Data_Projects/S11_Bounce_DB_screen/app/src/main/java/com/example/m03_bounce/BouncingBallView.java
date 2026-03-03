@@ -117,16 +117,8 @@ public class BouncingBallView extends View {
                 ball_1.speedY += deltaY * scalingFactor;
                 //Log.w("BouncingBallLog", " Xspeed=" + ball_1.speedX + " Yspeed=" + ball_1.speedY);
                 Log.w("BouncingBallLog", "x,y= " + previousX + " ," + previousY + "  Xdiff=" + deltaX + " Ydiff=" + deltaY);
-                balls.add(new Ball(Color.BLUE, previousX, previousY, deltaX, deltaY));  // add ball at every touch event
+                // add ball at every touch event
 
-                // A way to clear list when too many balls
-                if (balls.size() > 20) {
-                    // leave first ball, remove the rest
-                    Log.v("BouncingBallLog", "too many balls, clear back to 1");
-                    balls.clear();
-                    balls.add(new Ball(Color.RED));
-                    ball_1 = balls.get(0);  // points ball_1 to the first (zero-ith) element of list
-                }
 
         }
         // Save current x, y
@@ -142,24 +134,41 @@ public class BouncingBallView extends View {
     Random rand = new Random();
 
     // called when button is pressed
-    public void RussButtonPressed() {
-        Log.d("BouncingBallView  BUTTON", "User tapped the  button ... VIEW");
+    public void RussButtonPressed(int colorValue,
+                                  int x,
+                                  int y,
+                                  int dx,
+                                  int dy) {
 
-        //get half of the width and height as we are working with a circle
-        int viewWidth = this.getMeasuredWidth();
-        int viewHeight = this.getMeasuredHeight();
+        Log.d("BouncingBallView",
+                "Add ONE ball => X=" + x + " Y=" + y +
+                        " DX=" + dx + " DY=" + dy);
 
-        // make random x,y, velocity
-        int x = rand.nextInt(viewWidth);
-        int y = rand.nextInt(viewHeight);
-        int dx = 25 - rand.nextInt(50);
-        int dy = 10 - rand.nextInt(20);
+        int realColor = Color.rgb(
+                (colorValue * 5) % 255,
+                (colorValue * 3) % 255,
+                (colorValue * 7) % 255
+        );
 
-        balls.add(new Ball(Color.RED, x, y, dx, dy));  // add ball at every touch event
+        balls.add(new Ball(realColor, x, y, dx, dy));
 
-        Log.v("BouncingBallView  BUTTON", "n...add ball to DB");
-        DataModel newBall = new DataModel(0,(float)x,(float)y,(float)dx,(float)dy);
+        DataModel newBall = new DataModel(
+                0,
+                (float) x,
+                (float) y,
+                (float) dx,
+                (float) dy
+        );
+
         DBtest.save(newBall);
 
+        Log.v("DB_SAVE", "Ball saved to DB");
+
+    }
+
+    public void clearAllBalls() {
+        balls.clear();
+        DBtest.deleteAll();
+        Log.v("DB_CLEAR", "All balls cleared");
     }
 }
